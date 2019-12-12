@@ -8,10 +8,10 @@ bean.php
 return [
   'rabbitMq' =>[
         'class' => \Ticonv\Swoft\RabbitMq\MqClient::class,
-        'host' =>   'rabbitmq_server',
+        'host' =>   '127.0.0.1',
         'port' =>   5672,
         'userName'  =>  'admin',
-        'passWord'  =>  'mqadmin',
+        'passWord'  =>  '******',
         'setting'   =>  [
             'vhost'  =>  '/',
             'insist'  => false,
