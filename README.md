@@ -33,7 +33,8 @@ return [
 ```
 ## 使用
 ```php
-$connection = bean(\Ticonv\Swoft\RabbitMq\Pool::class);
+$pool = bean(\Ticonv\Swoft\RabbitMq\Pool::class);
+$connection = $pool->connect();
 $client = $connection->getClient();
 $channel = $client->channel();
 $channel->queue_declare('hello', false, false, false, false);
