@@ -27,7 +27,8 @@ return [
     ],
     'rabbitMq.pool'    =>  [
         'class' =>  \Ticonv\Swoft\RabbitMq\Pool::class,
-        'client'=>  bean(\Ticonv\Swoft\RabbitMq\MqClient::class)
+        'client'=>  bean(\Ticonv\Swoft\RabbitMq\MqClient::class),
+        'maxActive' => 10
     ]
 ]
 ```
